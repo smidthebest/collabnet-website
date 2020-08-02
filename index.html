@@ -1,65 +1,263 @@
 <!DOCTYPE html>
-<!--
-	Jack Luo Website by Jack
-	www.jack-luo.com | @Jack
--->
 <html lang="en">
-  <head>
-    <title>Home - Jack Luo</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/frameworks/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/frameworks/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/frameworks/normalize.min.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/frameworks/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="assets/css/website/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <h1 id="test-h1">Hello World, click on me to make me disapper</h1>
-      <a href="template.html">
-        <button class="btn btn-primary">
-          Click me to go to template page
-        </button>
-      </a>
-      <button class="btn btn-secondary" id="test-button-1">
-        Click me and h1 will toggle
-      </button>
-      <p id="test-p">Hello World</p>
-      <button class="btn btn-secondary" id="test-button-2">
-        Click me and p will animate
-      </button>      
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Copyright -->
-      <div id="copyright">
-        <p>&copy; Copyright 2020</p>
-        <p>
-          Design:
-          <a href="https://www.github.com/thejackluo">@thejackluo</a>
-        </p>
-        <i class="fas fa-user"></i>
-        <!-- uses solid style -->
-        <i class="far fa-user"></i>
-        <!-- uses regular style -->
-        <i class="fab fa-github-square"></i>
-        <!-- uses brands style -->
-        <i class="fab fa-500px"></i>
+  <!-- vendor css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- DashForge CSS -->
+  <link rel="stylesheet" href="assets/css/dashforge.css">
+  <link rel="stylesheet" href="assets/css/dashforge.dashboard.css">
+
+  <style>
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <script>
+    // similar behavior as an HTTP redirect
+    window.location.replace("template/classic/dashboard-one.html");
+    </script> -->
+
+  <!-- <div class="content content-fixed"> -->
+  <header class="navbar navbar-header navbar-header-fixed">
+    <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+    <div class="navbar-brand">
+      <a href="index.html" class="df-logo">Collab<span>Net</span></a>
+    </div><!-- navbar-brand -->
+    <div id="navbarMenu" class="navbar-menu-wrapper">
+      <div class="navbar-menu-header">
+        <a href="index.html" class="df-logo">dash<span>forge</span></a>
+        <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+      </div><!-- navbar-menu-header -->
+      <ul class="nav navbar-menu">
+        <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
+        <li class="nav-item active">
+          <a href="/index.html" class="nav-link"><i data-feather="pie-chart"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact.html" class="nav-link"><i data-feather="package"></i> Opportunities</a>
+        </li>
+        <li class="nav-item">
+          <a href="/blog.html" class="nav-link"><i data-feather="layers"></i> Blog</a>
+        </li>
+        <li class="nav-item"><a href="/podcast.html" class="nav-link"><i data-feather="box"></i> Podcast</a>
+        </li>
+        <li class="nav-item"><a href="/about.html" class="nav-link"><i data-feather="archive"></i> About</a></li>
+      </ul>
+    </div><!-- navbar-menu-wrapper -->
+  </header><!-- navbar -->
+  <div class="container pd-x-5 pd-lg-x-10 pd-xl-x-5">
+   
+    <div class="row row-xs">
+      <div class="col-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/img/brownBird_h.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/img/brownBird_h.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/img/brownBird_h.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 mg-t-10">
+        <div class="card">
+          <div class="card-body tx-center">
+            <p>Mission statement</p>
+          </div>
+        </div><!-- card -->
+      </div><!-- col -->
+
+      <!-- <div class="col-sm-5 col-md-12 col-lg-6 col-xl-5">
+            <div class="media">
+              <div class="wd-40 ht-40 rounded bd bd-2 bd-primary d-flex flex-shrink-0 align-items-center justify-content-center op-6">
+                <i data-feather="bar-chart-2" class="wd-20 ht-20 tx-primary stroke-wd-3"></i>
+              </div>
+              <div class="media-body mg-l-10">
+                <h4 class="tx-normal tx-rubik tx-spacing--2 lh-1 mg-b-5">33.50%</h4>
+                <p class="tx-10 tx-uppercase tx-medium tx-color-03 tx-spacing-1 tx-nowrap mg-b-0">Bounce Rate</p>
+              </div>
+            </div>
+          </div> -->
+
+      <div class="col-12 mg-t-10">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="mg-b-0">Products</h6>
+          </div><!-- card-header -->
+          <div class="card-body">
+            <div class="row row-xs mg-b-25">
+              <div class="col-sm-6 col-md-4">
+                <div class="card card-profile">
+                  <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
+                  <div class="card-body tx-13">
+                    <div>
+                      <a href="">
+                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-indigo">hr</span>
+                        </div>
+                      </a>
+                      <h5><a href="">Human Resources</a></h5>
+                      <p>1,232,099 Members</p>
+                      <button class="btn btn-block btn-white">Join</button>
+                    </div>
+                  </div>
+                </div><!-- card -->
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="card card-profile">
+                  <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
+                  <div class="card-body tx-13">
+                    <div>
+                      <a href="">
+                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-indigo">hr</span>
+                        </div>
+                      </a>
+                      <h5><a href="">Human Resources</a></h5>
+                      <p>1,232,099 Members</p>
+                      <button class="btn btn-block btn-white">Join</button>
+                    </div>
+                  </div>
+                </div><!-- card -->
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <div class="card card-profile">
+                  <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
+                  <div class="card-body tx-13">
+                    <div>
+                      <a href="">
+                        <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-indigo">hr</span>
+                        </div>
+                      </a>
+                      <h5><a href="">Human Resources</a></h5>
+                      <p>1,232,099 Members</p>
+                      <button class="btn btn-block btn-white">Join</button>
+                    </div>
+                  </div>
+                </div><!-- card -->
+              </div>
+            </div>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+
+      <div class="col-sm-12 col-md-6 mg-t-10">
+        <div class="card">
+          <div class="card-header d-flex align-items-start justify-content-between">
+            <h6 class="lh-5 mg-b-0">Featured Podcast</h6>
+          </div><!-- card-header -->
+          <div class="card-body pd-y-15 pd-x-10">
+            <p>Featured Podcast</p>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+      <div class="col-sm-12 col-md-6 mg-t-10">
+        <div class="card">
+          <div class="card-header d-sm-flex align-items-start justify-content-between">
+            <h6 class="lh-5 mg-b-0">Featured Blog</h6>
+          </div><!-- card-header -->
+          <div class="card-body pd-y-15 pd-x-10">
+            <p>Featured Blog</p>
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- col -->
+
+      <div class="col-12 mg-t-10">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="mg-b-0">Sponsors</h6>
+          </div><!-- card-header -->
+          <div class="card-body tx-center">
+            <div class="row row-xs mg-b-25">
+              <div class="col-4">
+                <a href="https://www.google.com/">
+                  <img src="assets/img/buffalo_h.jpg" alt="" target="_blank">
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://www.google.com/">
+                  <img src="assets/img/buffalo_h.jpg" alt="" target="_blank">
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://www.google.com/" target="_blank">
+                  <img src="assets/img/buffalo_h.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
+  <footer class="footer">
+    <div>
+      <span>&copy; 2020 Collabnet v0.0.1. </span>
+      <br><span>Created by Collabnet</a></span>
     </div>
+    <div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="contact.html#contact" class="nav-link">Contact Us</a>
+        <a href="about.html" class="nav-link">About Us</a>
+      </nav>
+    </div>
+    <div>
+      <!-- Add Socials, etc.  -->
+      <nav class="nav">
+        <a href="https://www.instagram.com/collabnet/" class="nav-link"> <i class="fa fa-instagram"></i> Instagram</a>
+        <a href="change-log.html" class="nav-link"> <i class="fa fa-linkedin"></i> Linkedin</a>
+        <a href="https://discordapp.com/invite/RYqkVuw" class="nav-link"> <i class="fa fa-facebook"></i> Facebook</a>
+      </nav>
+    </div>
+  </footer>
+  <!-- </div>content -->
 
-    <!-- Scripts -->
-    <script src="assets/js/frameworks/jquery.min.js"></script>
-    <script src="assets/js/frameworks/popper.min.js"></script>
-    <script src="assets/js/frameworks/bootstrap.min.js"></script>
-    <script defer src="assets/js/frameworks/fontawesome-all.min.js"></script>
-    <script src="assets/js/website/main.js"></script>
-  </body>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/feather-icons/feather.min.js"></script>
+  <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="lib/jquery.flot/jquery.flot.js"></script>
+  <script src="lib/jquery.flot/jquery.flot.stack.js"></script>
+  <script src="lib/jquery.flot/jquery.flot.resize.js"></script>
+  <script src="lib/chart.js/Chart.bundle.min.js"></script>
+  <script src="lib/jqvmap/jquery.vmap.min.js"></script>
+  <script src="lib/jqvmap/maps/jquery.vmap.usa.js"></script>
+
+  <script src="assets/js/dashforge.js"></script>
+  <script src="assets/js/dashforge.sampledata.js"></script>
+
+  <!-- append theme customizer -->
+  <script src="lib/js-cookie/js.cookie.js"></script>
+  <script src="assets/js/dashforge.settings.js"></script>
+
+</body>
+
 </html>
