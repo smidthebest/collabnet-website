@@ -986,7 +986,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
   margin: 0;
@@ -994,9 +995,10 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #001737;
-  text-align: left;
-  background-color: #fff; }
+  color: #151f23;
+  background-color: #edf8f7;
+  /* background-color: #3eb0aa; */
+  text-align: left;}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -3959,6 +3961,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: #3eb0aa;
   padding: 0.5rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
@@ -12596,10 +12599,11 @@ textarea.parsley-success:focus {
 
 .navbar-header {
   align-items: stretch;
+  /* background-color: #3eb0aa; */
+  background-color: #edf8f7;
   height: 55px;
   padding: 0;
   justify-content: flex-start;
-  background-color: #fff;
   border-bottom: 1px solid rgba(72, 94, 144, 0.16); }
   @media (min-width: 992px) {
     .navbar-header {
@@ -13838,10 +13842,11 @@ textarea.parsley-success:focus {
   font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
   letter-spacing: .3px;
   padding: 15px 25px;
-  background-color: #fafbfc;
   color: #637388;
   border-top: 1px solid rgba(72, 94, 144, 0.16);
   text-transform: uppercase;
+  /* background-color: #3eb0aa; */
+  background-color: #edf8f7;
   display: none; }
   @media (min-width: 992px) {
     .footer {
